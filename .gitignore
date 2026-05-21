@@ -1,0 +1,39 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/Ui/node_modules
+node_modules/
+/.pnp
+.pnp.js
+
+# testing
+/Ui/coverage
+coverage/
+
+# production
+/Ui/build
+build/
+dist/
+
+# misc
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Suspicious root files to prevent accidental commit of potential keys
+eval\ \"\$(ssh-agent\ -s)\"
+eval\ \"\$(ssh-agent\ -s)\".pub
